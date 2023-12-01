@@ -1,0 +1,13 @@
+# Create your story
+
+game.setBackground("clouds")
+phoenix = game.createCharacter("phoenix")
+monkey = game.createCharacter("monkey")
+
+phoenix.enter("left")
+monkey.enter("right")
+
+phoenix.say("Nice to meet you, I've heard a lot about you")
+monkey.say("Nice to meet you too, what brings you here?")
+
+phoenix.say("There's a dragon that sent knights all over and I must beat them, but I need your help, do you wanna come?")
