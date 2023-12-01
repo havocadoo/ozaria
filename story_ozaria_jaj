@@ -1,13 +1,102 @@
-# Create your story
+# Defining variables
 
 game.setBackground("clouds")
 phoenix = game.createCharacter("phoenix")
 monkey = game.createCharacter("monkey")
+knight_1 = game.createCharacter("fox")
+knight_2 = game.createCharacter("fox")
+knight_3 = game.createCharacter("fox")
+empress = game.createCharacter("empress")
 
 phoenix.enter("left")
 monkey.enter("right")
 
+# First things
 phoenix.say("Nice to meet you, I've heard a lot about you")
 monkey.say("Nice to meet you too, what brings you here?")
 
 phoenix.say("There's a dragon that sent knights all over and I must beat them, but I need your help, do you wanna come?")
+
+###### SCENARIO THREE ######
+    # This is according to the way the story was written on the word document
+
+# choice 1
+choice_1 = game.showChoice("Monkey Agrees", "Monkey disagrees")
+
+if choice_1 == 1:
+    monkey.say("Alright, sounds dangerous, but I think we got this")
+    phoenix.say("Thank you, I know we got this")
+    
+    monkey.exit()
+    phoenix.exit()
+    
+    # forest
+    
+    game.setBackground("forest")
+    monkey.enter("right")
+    phoenix.enter("right")
+    knight_1.enter("left")
+    
+    knight_1.say("No! You will not win against me!")
+    
+    monkey.say("We will.")
+    
+    phoenix.exit()
+    monkey.exit()
+    knight_1.exit()
+    
+    empress.enter("right")
+    empress.say("They fought for a long time, but the monkey and and the phoenix succesfully won")
+    empress.say("They both moved on, searching for the next knights, they eventually found them in a very high mountain")
+    empress.exit()
+    
+    game.setBackground("clouds")
+    phoenix.enter("left")
+    monkey.enter("left")
+    
+    knight_1.enter("right")
+    knight_2.enter("right")
+    knight_3.enter("right")
+    
+    phoenix.say("Listen, let's not make this harder, leave, and we will save a lot of time")
+    
+    knight_1.say("Sorry, we won't do that")
+    knight_2.say("We aren't that easy to beat")
+    knight_3.say("yeah, that")
+    
+    phoenix.exit()
+    monkey.exit()
+    knight_1.exit()
+    knight_2.exit()
+    knight_3.exit()
+    
+    empress.enter("right")
+    empress.say("Unbelievable, but the monkey and the phoenix, joining their powers, won against three knights")
+    empress.exit()
+    
+    game.setBackground("bamboo")
+    
+    knight_1.enter("right")
+    knight_2.enter("right")
+    knight_3.enter("right")
+    
+    monkey.enter("left")
+    phoenix.enter("left")
+    
+    knight_1.say("We got here before you did, we won't let you beat our boss")
+    
+    monkey.say("Please, just leave")
+    knight_3.say("You know what, we will, I don't want to fight")
+    
+    monkey.exit()
+    phoenix.exit()
+    knight_1.exit()
+    knight_2.exit()
+    knight_3.exit()
+    
+    empress.enter("left")
+    empress.say("Yeah, they just left")
+    empress.exit()
+
+    
+    
